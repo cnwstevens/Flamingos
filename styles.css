@@ -1,0 +1,152 @@
+html {
+    cursor: url('flamingocursor.png'), pointer;
+}
+
+
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.homepage {
+    background-image: url(https://live.staticflickr.com/7590/16986370590_ece6be7695_b.jpg);
+    background-size: auto;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.facts {
+    position: relative;
+}
+
+.facts::before{
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(https://live.staticflickr.com/4024/4494611360_ca5e2c2af0_b.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
+}
+
+.facts-inside{
+    position: relative;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.please-center {
+    width: 1000px;
+    text-align: center;
+}
+
+.facts-border {
+    width: 800px;
+    max-width: 80%;
+    background: rgba(255, 99, 141, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+header {
+    display: block;
+    margin-bottom: auto;
+    text-align: right;
+}
+
+.nav {
+    justify-content: right;
+}
+
+.nav-link {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Quiz Style */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #FC6C85;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: 1px solid black;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: deeppink;
+}
+
+.btn.correct {
+    background-color: green;
+    color: white;
+}
+
+.btn.wrong {
+    background-color: red;
+    color: white;
+}
+
+.start, .next {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Media Styles */
+
+.jumbotron {
+    color: white;
+    background-color: hotpink;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.grayscale {
+  filter: grayscale(0);
+}
+
+.grayscale:hover {
+  filter: grayscale(70%);
+}
